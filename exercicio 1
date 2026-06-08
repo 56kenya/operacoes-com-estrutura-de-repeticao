@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int valor;
+
+            Console.WriteLine("Insira um valor positivo.");
+
+            do
+            {
+            valor = int.Parse(Console.ReadLine());
+
+            if (valor < 0)
+            {
+                Console.WriteLine("Insira um valor positivo.");
+            }
+
+            } while (valor < 0) ;
+
+            Console.WriteLine("Valor válido.");
+
+        }
+    }
+}
