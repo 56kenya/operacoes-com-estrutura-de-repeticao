@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string genero;
+
+            do
+            {
+                Console.WriteLine("Insira seu gênero (M ou F):");
+                genero = Console.ReadLine().ToUpper();
+
+                if (genero != "M" && genero != "F")
+                {
+                    Console.WriteLine("Inválido.");
+                }
+
+            } while (genero != "M" && genero != "F");
+
+            Console.WriteLine("Obrigado.");
+
+        }
+    }
+}
