@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int X;
+            int a;
+            int b;
+
+            do
+            {
+                Console.WriteLine("Insira o valor do multiplicador: ");
+                X = int.Parse(Console.ReadLine());
+
+                if (X < 0)
+                {
+                    Console.WriteLine("O valor deve ser positivo!");
+                }
+
+            }
+            while (X < 0);
+
+            Console.WriteLine("Insira o valor do numerador A: ");
+            a = int.Parse(Console.ReadLine());
+
+            do
+            {
+                Console.WriteLine("Insira o valor do numerador B: ");
+                b = int.Parse(Console.ReadLine());
+
+                if (b <= a)
+                {
+                    Console.WriteLine("O numerador B deve ser maior que A!");
+                }
+
+            }
+            while (b <= a);
+
+            for (int i = a; i <= b; i++)
+            {
+                Console.WriteLine($"{X} x {i} = {X * i}");
+            }
+
+        }
+    }
+}
