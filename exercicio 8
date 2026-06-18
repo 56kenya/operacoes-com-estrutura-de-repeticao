@@ -1,7 +1,22 @@
-﻿int soma = 0;
-for (int i = 1; i <= 100; i++)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace perfume
 {
-    soma += i;
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int soma = 0;
+            for (int i = 1; i <= 100; i++)
+            {
+                soma += i;
+            }
+            Console.WriteLine($"A soma dos inteiros positivos de um a cem é: {soma}");
+            Console.ReadLine();
+        }
+    }
 }
-Console.WriteLine($"A soma dos inteiros positivos de um a cem é: {soma}");
-Console.ReadLine();
